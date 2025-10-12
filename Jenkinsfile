@@ -40,7 +40,7 @@ pipeline {
             echo 'Deployment to EKS successful!'
         }
         failure {
-            echo 'Pipeline failed. Check logs for details.'
+            echo 'Pipeline failed. Check logs.'
         }
     }
 }
