@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Trend-app
+  labels:
+    app: Trend-app
+
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: Trend-app
+  template:
+    metadata:
+      labels:
+        app: Trend-app
+    spec:
+      containers:
+        - name: Trend-app-container
+          image: nishanth420/trend-app:latest
+          ports:
+            - containerPort: 3000
+          
+

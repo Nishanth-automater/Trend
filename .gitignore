@@ -1,0 +1,16 @@
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Ignore Terraform plugin and state files
+.terraform/
+*.tfstate
+*.tfstate.backup
+
