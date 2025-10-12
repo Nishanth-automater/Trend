@@ -8,7 +8,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Nishanth-automater/Trend.git'
+                git branch: 'main',
+                    url: 'https://github.com/Nishanth-automater/Trend.git',
+                    credentialsId: 'github'
             }
         }
 
