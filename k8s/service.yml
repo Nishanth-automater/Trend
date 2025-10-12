@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: trend-app-service
   labels:
-    app: trend-app-service
+    app: trend-app
 spec:
   type: LoadBalancer
   selector:
-    app: trend-app-service
+    app: trend-app
   ports:
     - protocol: TCP 
       port: 80
